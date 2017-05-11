@@ -1,0 +1,8 @@
+<table>
+  <tr>
+      <person-form (personCreated)="addPerson($event)"></person-form>
+  <tr>
+  <tr *ngFor="let person of persons">
+    <person-detail [person]="person"></person-detail>
+  </tr>
+</table>
